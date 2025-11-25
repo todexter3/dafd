@@ -43,7 +43,7 @@ def main():
         for args.tau_hat_init in [1.0]: # [-5,5]之间
             for args.learning_rate in [1e-4,1e-5,3e-5]:
                 for args.batch_size in [256,128]:
-                    for args.seq_len in [120,90,60,180]:    
+             
                         for args.d_model in [128]:                 
                             args.d_ff = int(args.d_model * 2)
                             for args.patch_len in [16]:
@@ -89,7 +89,7 @@ def main():
             for args.learning_rate in [3e-5]:
             # for args.learning_rate in [1e-4]:
                 for args.batch_size in [128]:
-                    for args.seq_len in [120]:
+
                     # for args.seq_len in range(180, 210+30,30): # min15 720
                         # --mlp LSTM
                         for args.MLP_layers in [2]:
